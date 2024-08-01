@@ -1,0 +1,463 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%; /* Adjust padding for smaller screens */
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px; /* Adjust font size for smaller screens */
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 15px orangered,
+                 0 0 30px orangered;
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    color: white;
+    font-weight: 500;
+    margin: 0 10px; /* Adjust margin for smaller screens */
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.Contact {
+    padding: 8px 20px; /* Adjust padding for smaller screens */
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.Contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Home section styles */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column; /* Stack content in a column on smaller screens */
+    align-items: center;
+    padding: 30px 5%; /* Adjust padding for smaller screens */
+}
+
+.home-content {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+}
+
+.home-content h3 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+}
+
+.home-content h1 {
+    font-size: 48px; /* Adjust font size for smaller screens */
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin: 20px 0;
+}
+
+.img-box img {
+    width: 100%; /* Ensure image spans full width */
+    max-width: 400px; /* Limit maximum width for smaller screens */
+    border-radius: 50%;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%; /* Adjust padding for smaller screens */
+    background: black;
+    flex-direction: column; /* Stack content in a column on smaller screens */
+    gap: 2em;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 300px; /* Limit maximum width for smaller screens */
+    box-shadow: 0 0 15px orangered,
+                0 0 30px orangered;
+    border-radius: 50%;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+    color: white;
+}
+
+.about-content h3 {
+    font-size: 48px; /* Adjust font size for smaller screens */
+    color: white;
+}
+
+.about-content p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    color: white;
+    margin: 1em 0 2em;
+}
+
+/* Contact section styles */
+.contact-form {
+    text-align: center;
+    padding: 5% 5%; /* Adjust padding for smaller screens */
+}
+
+.contact-form h2 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+    margin-top: 2em; /* Adjust margin for smaller screens */
+    margin-bottom: 1em; /* Adjust margin for smaller screens */
+}
+
+.contact-form form {
+    max-width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Adjust gap between inputs for smaller screens */
+    justify-content: center;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: calc(50% - 10px); /* Adjust input width for smaller screens */
+    padding: 1em;
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.contact-form form textarea {
+    width: 100%; /* Ensure textarea spans full width */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form form .btn-1 {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    padding: 30px 5%; /* Adjust padding for smaller screens */
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer .social {
+    padding-bottom: 20px;
+}
+
+.footer .social a {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    width: 35px; /* Adjust size of social icons for smaller screens */
+    height: 35px; /* Adjust size of social icons for smaller screens */
+    line-height: 35px; /* Adjust line height for smaller screens */
+    margin: 0 8px; /* Adjust margin for smaller screens */
+}
+
+.footer ul {
+    margin-top: 10px; /* Adjust margin for smaller screens */
+}
+
+.footer ul li {
+    display: block;
+    margin-bottom: 10px; /* Adjust margin between list items for smaller screens */
+}
+
+.footer ul li a {
+    font-size: 14px; /* Adjust font size for smaller screens */
+}
+
+.footer .copyright {
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 15px 5%;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .navbar a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    .Contact {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .home-content h1 {
+        font-size: 42px;
+    }
+    .home-content p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    .img-box img {
+        max-width: 300px;
+    }
+    .about {
+        padding: 10% 5%;
+    }
+    .about-img img {
+        max-width: 250px;
+        box-shadow: 0 0 15px orangered,
+                    0 0 30px orangered;
+    }
+    .about-content h2 {
+        font-size: 24px;
+    }
+    .about-content h3 {
+        font-size: 42px;
+    }
+    .about-content p {
+        font-size: 14px;
+    }
+    .contact-form h2 {
+        font-size: 24px;
+    }
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        width: calc(100% - 20px);
+        font-size: 14px;
+    }
+    .footer .social a {
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .footer ul li a {
+        font-size: 14px;
+    }
+    .footer .copyright {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 99;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .navbar a {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .Contact {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .home {
+        padding: 20px 5%;
+        gap: 3em;
+    }
+    .home-content h1 {
+        font-size: 36px;
+    }
+    .home-content p {
+        font-size: 14px;
+        margin: 15px 0;
+    }
+    .img-box img {
+        max-width: 250px;
+    }
+    .about {
+        padding: 20% 5%;
+        gap: 5em;
+    }
+    .about-img img {
+        max-width: 200px;
+    }
+    .about-content h2 {
+        font-size: 22px;
+    }
+    .about-content h3 {
+        font-size: 36px;
+    }
+    .about-content p {
+        font-size: 14px;
+    }
+    .contact-form {
+        padding: 10% 5%;
+    }
+    .contact-form h2 {
+        font-size: 22px;
+    }
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        width: calc(100% - 20px);
+        font-size: 14px;
+    }
+    .footer .social a {
+        font-size: 16px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .footer ul li a {
+        font-size: 12px;
+    }
+    .footer .copyright {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 8px 5%;
+    }
+    .logo {
+        font-size: 16px;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 99;
+        text-align: center;
+    }
+    .navbar a {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+    .Contact {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .home-content h1 {
+        font-size: 32px;
+    }
+    .home-content p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .img-box img {
+        max-width: 200px;
+    }
+    .about {
+        padding: 30% 5%;
+        gap: 3em;
+    }
+    .about-img img {
+        max-width: 150px;
+    }
+    .about-content h2 {
+        font-size: 20px;
+    }
+    .about-content h3 {
+        font-size: 32px;
+    }
+    .about-content p {
+        font-size: 12px;
+    }
+    .contact-form {
+        padding: 30% 5%;
+    }
+    .contact-form h2 {
+        font-size: 20px;
+    }
+    .contact-form form .input-box input,
+    .contact-form form textarea {
+        width: calc(100% - 20px);
+        font-size: 12px;
+    }
+    .footer .social a {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .footer ul li a {
+        font-size: 10px;
+    }
+    .footer .copyright {
+        font-size: 8px;
+    }
+}
